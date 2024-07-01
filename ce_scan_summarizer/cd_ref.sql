@@ -1,5 +1,0 @@
-SELECT ITEMID::integer item_idnt, FROM_DATE clm_start, TO_DATE clm_end, PROMOID PRMTN_COMP_IDNT, PROMO_DESCRIPTION PRMTN_COMP_NAME, STATE clm_state, QUANTITY clm_qty, REBATE_RATE clm_rate, REBATE_AMOUNT clm_product, GST, REF_NUM clm_ref_num
-FROM coles.STI_WIP_CE.CLAIM_DETAILS
-WHERE itemid in ('{}')
-and FROM_DATE between '{}'::date and '{}'::date
-and TO_DATE between '{}'::date and '{}'::date

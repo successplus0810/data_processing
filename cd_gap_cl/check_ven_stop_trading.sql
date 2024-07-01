@@ -1,0 +1,5 @@
+select distinct VENDOR_NUM from
+(SELECT VENDOR_NUM, max(PROCESS_DTE) AS max_process_date
+FROM COLES.LIQUORLAND.LIQUOR_20210101_20221031_AP
+GROUP BY VENDOR_NUM
+having max_process_date < '2021-6-1')

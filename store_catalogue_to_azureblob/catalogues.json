@@ -1,0 +1,53 @@
+{
+    "latestcatalogues":{
+        "BCF": "https://www.latestcatalogues.com/bcf",
+        "Big W": "https://www.latestcatalogues.com/big-w",
+        "Bunnings": "https://www.latestcatalogues.com/bunnings-warehouse",
+        "BWS": "https://www.latestcatalogues.com/bws",
+        "Coles Supermarket": "https://www.latestcatalogues.com/coles",
+        "CWH AU": "https://www.latestcatalogues.com/chemist-warehouse",
+        "Discount Drug Stores": "https://www.latestcatalogues.com/discount-drug-stores",
+        "First Choice Liquor": "https://www.latestcatalogues.com/first-choice",
+        "Foodworks": "https://www.latestcatalogues.com/foodworks",
+        "Harvey Norman": "https://www.latestcatalogues.com/harvey-norman",
+        "IGA": "https://www.latestcatalogues.com/iga",
+        "JB HI FI": "https://www.latestcatalogues.com/jb-hi-fi",
+        "Liquorland": "https://www.latestcatalogues.com/liquorland",
+        "My Chemist": "https://www.latestcatalogues.com/my-chemist",
+        "Myer":"https://www.latestcatalogues.com/myer",
+        "Officeworks": "https://www.latestcatalogues.com/officeworks",
+        "Priceline": "https://www.latestcatalogues.com/priceline-pharmacy",
+        "Rebel Sport": "https://www.latestcatalogues.com/rebel",
+        "Repco AUS": "https://www.latestcatalogues.com/repco",
+        "Spotlight": "https://www.latestcatalogues.com/spotlight",
+        "Supercheap Auto": "https://www.latestcatalogues.com/supercheap-auto",
+        "Target": "https://www.latestcatalogues.com/target",
+        "Terry White":"https://www.latestcatalogues.com/terry-white",
+        "The Good Guys": "https://www.latestcatalogues.com/the-good-guys",
+        "Vintage Cellars": "https://www.latestcatalogues.com/vintage-cellars",
+        "Woolworths": "https://www.latestcatalogues.com/woolworths"
+    },
+    "salefinder":{
+        "IGA Liquor": "https://salefinder.com.au/IGA-Liquor-catalogue",
+        "JB HI FI NZ":"https://salefinder.co.nz/JB-HiFi-catalogue",
+        "OfficeMAX NZ": "https://salefinder.co.nz/OfficeMax-catalogue",
+        "Repco NZ": "https://salefinder.co.nz/Repco-catalogue",
+        "Amcal+":"https://salefinder.com.au/Amcal-catalogue"
+    },
+    "manual":{
+        "Amcal": "https://www.amcal.com.au/online-catalogue",
+        "Guardian": "https://www.guardianpharmacies.com.au/catalogue"
+    },
+    "chemistking":{
+        "Chemist King":"https://www.chemistking.com.au/catalogue"
+    },
+    "spar":{
+        "Spar":"https://www.spar.com.au/sparq"
+    },
+	"davidjones":{
+        "David Jones":"https://au-catalogues.com/david-jones-specials"
+	},
+    "#error":{
+
+    }
+}

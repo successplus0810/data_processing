@@ -212,18 +212,18 @@ dict_supplier = {}
 dict_item_import = df_excel.to_dict(orient='records')
 for index in dict_item_import:
     if index['CLASSIFY_NOTE'].upper() == 'ONLINE':
-        tbl_daily = 'COLES.STI_WIP_CO.x'
-        tbl_promo = 'COLES.STI_WIP_CO.x'
+        tbl_daily = 'x'
+        tbl_promo = 'x'
         column_list =  'y'
         template = 'template'
     elif index['CLASSIFY_NOTE'].upper() == 'ONLINE SIMPLE EXCLUSIVE': # simple exclusive
-        tbl_daily = '(SELECT *, NULL AS STATE FROM COLES.STI_WIP_CO.x)'
-        tbl_promo = 'COLES.STI_WIP_CO.x'
+        tbl_daily = '(SELECT *, NULL AS STATE FROM x)'
+        tbl_promo = 'x'
         column_list = 'y'
         template = 'template_nostate'
     else: #multibuy exclusive
-        tbl_daily = 'COLES.STI_WIP_CO.x'
-        tbl_promo = 'COLES.STI_WIP_CO.x'
+        tbl_daily = 'x'
+        tbl_promo = 'x'
         column_list = 'y'
         template = 'template_nostate'
     if index['SUPPLIER_ID'] not in dict_supplier.keys():

@@ -212,19 +212,19 @@ dict_supplier = {}
 dict_item_import = df_excel.to_dict(orient='records')
 for index in dict_item_import:
     if index['CLASSIFY_NOTE'].upper() == 'ONLINE':
-        tbl_daily = 'COLES.STI_WIP_CO.VIEW_MULTIBUYPROMOS_COLOTHER_DAILY'
-        tbl_promo = 'COLES.STI_WIP_CO.VIEW_MULTIBUYPROMOS_COLOTHER_SCHEMA'
-        column_list =  'ORDER_STAGING_DAY_IDNT, ITEM_IDNT_VCHAR ITEM_IDNT, ITEM_LONG_DESC ITEM_NAME, STATE CLM_STATE, PICKED_QTY, SCAN_TTL, REF_NUM CLM_REF_NUM, CLAIM_QTY, CLAIM_AMT, ELIGIBLE, PRMTN_COMP_IDNT, PRMTN_COMP_NAME, PROMO_START_DT, PROMO_END_DT, GST_RATE, PAF_LOCATION, EMAIL, SUPP_IDNT, SUPP_DESC, DEPT_IDNT, DEPT_DESC, SAP_ID'
+        tbl_daily = 'COLES.STI_WIP_CO.x'
+        tbl_promo = 'COLES.STI_WIP_CO.x'
+        column_list =  'y'
         template = 'template'
     elif index['CLASSIFY_NOTE'].upper() == 'ONLINE SIMPLE EXCLUSIVE': # simple exclusive
-        tbl_daily = '(SELECT *, NULL AS STATE FROM COLES.STI_WIP_CO.VIEW_CO_EXC_SIMP_DAILY)'
-        tbl_promo = 'COLES.STI_WIP_CO.VIEW_CO_EXC_SIMP_SCHEMA'
-        column_list = 'ORDER_STAGING_DAY_IDNT, ITEM_IDNT_VCHAR ITEM_IDNT, ITEM_LONG_DESC ITEM_NAME, STATE CLM_STATE, PICKED_QTY, SCAN_TTL, PRMTN_COMP_IDNT, PRMTN_COMP_NAME, PROMO_START_DT, PROMO_END_DT, GST_RATE, PAF_LOCATION, EMAIL, SUPP_IDNT, SUPP_DESC, DEPT_IDNT, DEPT_DESC, SAP_ID'
+        tbl_daily = '(SELECT *, NULL AS STATE FROM COLES.STI_WIP_CO.x)'
+        tbl_promo = 'COLES.STI_WIP_CO.x'
+        column_list = 'y'
         template = 'template_nostate'
     else: #multibuy exclusive
-        tbl_daily = 'COLES.STI_WIP_CO.VIEW_CO_EXC_TH_DAILY'
-        tbl_promo = 'COLES.STI_WIP_CO.VIEW_CO_EXC_TH_SCHEMA'
-        column_list = 'ORDER_STAGING_DAY_IDNT, ITEM_IDNT_VCHAR ITEM_IDNT, ITEM_LONG_DESC ITEM_NAME, STATE CLM_STATE, PICKED_QTY, SCAN_TTL, PRMTN_COMP_IDNT, PRMTN_COMP_NAME, PROMO_START_DT, PROMO_END_DT, GST_RATE, PAF_LOCATION, EMAIL, SUPP_IDNT, SUPP_DESC, DEPT_IDNT, DEPT_DESC, SAP_ID'
+        tbl_daily = 'COLES.STI_WIP_CO.x'
+        tbl_promo = 'COLES.STI_WIP_CO.x'
+        column_list = 'y'
         template = 'template_nostate'
     if index['SUPPLIER_ID'] not in dict_supplier.keys():
         dict_supplier[index['SUPPLIER_ID']] = []
